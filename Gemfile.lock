@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/spree/hub_gem.git
+  revision: 003124850eb5bd30dbc3ab81529c62a100b88c3a
+  specs:
+    spree_hub (2.3.0.beta)
+      active_model_serializers (= 0.9.0.alpha1)
+      spree_core
+
+GIT
   remote: git://github.com/spree/spree.git
   revision: be64a23eff50e0b0a8292f074a4504c220c7afe7
   branch: 2-2-stable
@@ -77,6 +85,8 @@ GEM
       erubis (~> 2.7.0)
       rack (~> 1.5.2)
       rack-test (~> 0.6.2)
+    active_model_serializers (0.9.0.alpha1)
+      activemodel (>= 3.2)
     active_utils (2.0.2)
       activesupport (>= 2.3.11)
       i18n
@@ -299,5 +309,6 @@ DEPENDENCIES
   sdoc
   spree!
   spree_auth_devise!
+  spree_hub!
   turbolinks
   uglifier (>= 1.3.0)
