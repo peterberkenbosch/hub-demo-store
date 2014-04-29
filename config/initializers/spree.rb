@@ -13,8 +13,8 @@ end
 
 Spree.user_class = "Spree::User"
 
-Spree::Hub::Config[:hub_store_id] = "5322d47ee3a17ea66e000001"
-Spree::Hub::Config[:hub_token] = "d637b36cb45386d998e6d72064b332015fe7aed4af957efd"
-Spree::Hub::Config[:enable_hub] = true
-
-Spree::Order.after_commit -> { Spree::Hub::OrderSerializer.push_it self }
+Spree::Hub::Config[:hub_store_id] = ENV["hub_store_id"]
+Spree::Hub::Config[:hub_token] = ENV["hub_token"]
+Spree::Hub::Config[:enable_push] = true
+Spree::Hub::Config[:enable_auto_push] = true
+Spree::Hub::Config[:hub_push_uri] = "https://push.wombat.co"

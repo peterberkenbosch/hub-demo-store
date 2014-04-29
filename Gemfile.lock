@@ -1,14 +1,16 @@
 GIT
   remote: git://github.com/spree/hub_gem.git
-  revision: 003124850eb5bd30dbc3ab81529c62a100b88c3a
+  revision: c3ba88008a7906b4152849c655d732f989daa1a0
+  branch: 2-2-stable
   specs:
     spree_hub (2.3.0.beta)
       active_model_serializers (= 0.9.0.alpha1)
+      httparty
       spree_core
 
 GIT
   remote: git://github.com/spree/spree.git
-  revision: be64a23eff50e0b0a8292f074a4504c220c7afe7
+  revision: 076ccaaf8f112466deb594143d58887e6470fb6b
   branch: 2-2-stable
   specs:
     spree (2.2.2.beta)
@@ -62,7 +64,7 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree_auth_devise.git
-  revision: 6469c80cbb8f7bd09fe302c2d0e7fdcb187e38de
+  revision: e75c1f021c4353b2e10474dfb9181dc8d4571b40
   branch: 2-2-stable
   specs:
     spree_auth_devise (2.2.0)
@@ -90,7 +92,7 @@ GEM
     active_utils (2.0.2)
       activesupport (>= 2.3.11)
       i18n
-    activemerchant (1.42.7)
+    activemerchant (1.42.9)
       active_utils (~> 2.0, >= 2.0.1)
       activesupport (>= 2.3.14, < 5.0.0)
       builder (>= 2.1.2, < 4.0.0)
@@ -116,7 +118,6 @@ GEM
     acts_as_list (0.3.0)
       activerecord (>= 3.0)
     arel (4.0.2)
-    atomic (1.1.16)
     awesome_nested_set (3.0.0.rc.3)
       activerecord (>= 4.0.0, < 5)
     aws-sdk (1.27.0)
@@ -145,7 +146,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
-    colorize (0.7.1)
+    colorize (0.7.2)
     deface (1.0.0)
       colorize (>= 0.5.8)
       nokogiri (~> 1.6.0)
@@ -161,12 +162,12 @@ GEM
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.0.2)
-    ffaker (1.23.0)
+    ffaker (1.24.0)
     friendly_id (5.0.3)
       activerecord (>= 4.0.0)
     highline (1.6.21)
     hike (1.2.3)
-    httparty (0.13.0)
+    httparty (0.13.1)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
     i18n (0.6.9)
@@ -188,11 +189,11 @@ GEM
     mime-types (1.25.1)
     mini_portile (0.5.3)
     minitest (4.7.5)
-    monetize (0.2.0)
+    monetize (0.3.0)
       money (~> 6.1.0.beta1)
     money (6.1.1)
       i18n (~> 0.6.4)
-    multi_json (1.9.2)
+    multi_json (1.9.3)
     multi_xml (0.5.5)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
@@ -227,7 +228,7 @@ GEM
       activesupport (= 4.0.4)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    rake (10.2.2)
+    rake (10.3.1)
     ransack (1.1.0)
       actionpack (>= 3.0)
       activerecord (>= 3.0)
@@ -246,12 +247,12 @@ GEM
       rspec-core (~> 2.14.0)
       rspec-expectations (~> 2.14.0)
       rspec-mocks (~> 2.14.0)
-    sass (3.2.18)
-    sass-rails (4.0.2)
+    sass (3.2.19)
+    sass-rails (4.0.3)
       railties (>= 4.0.0, < 5.0)
       sass (~> 3.2.0)
       sprockets (~> 2.8, <= 2.11.0)
-      sprockets-rails (~> 2.0.0)
+      sprockets-rails (~> 2.0)
     sdoc (0.4.0)
       json (~> 1.8)
       rdoc (~> 4.0, < 5.0)
@@ -270,8 +271,7 @@ GEM
     state_machine (1.2.0)
     stringex (1.5.1)
     thor (0.19.1)
-    thread_safe (0.3.1)
-      atomic (>= 1.1.7, < 2)
+    thread_safe (0.3.3)
     tilt (1.4.1)
     treetop (1.4.15)
       polyglot
