@@ -34,7 +34,7 @@ end
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.14.2'
-  gem 'capybara'
+  gem 'capybara', '>= 2.2.1'
 end
 
 gem 'spree', github: 'spree/spree', branch: '2-2-stable'
